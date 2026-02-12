@@ -46,6 +46,11 @@ body {
     background: #c7b185;
 }
 
+.character.active {
+    background: #bfa97f;
+    font-weight: bold;
+}
+
 .character-icon {
     width: 40px;
     height: 40px;
@@ -83,6 +88,7 @@ body {
     flex: 1;
     padding: 20px;
     overflow-y: auto;
+    scroll-behavior: smooth;
 }
 
 .message {
@@ -130,6 +136,12 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: opacity 0.3s ease;
+    opacity: 0;
+}
+
+.profile-overlay.show {
+    opacity: 1;
 }
 
 .hidden {

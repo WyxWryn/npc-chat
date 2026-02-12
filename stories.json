@@ -1,0 +1,58 @@
+{
+  "aldric": {
+    "name": "Sir Aldric",
+    "description": "A hardened knight bound by oath and debt.",
+    "iconColor": "#6b3f1d",
+    "scenes": [
+      {
+        "npc": "You return. Have you come to settle your debt?",
+        "choices": [
+          {
+            "text": "I have the coin.",
+            "reply": "Then we are square.",
+            "next": 1,
+            "reputation": { "aldric": 5 },
+            "tags": ["honest"]
+          },
+          {
+            "text": "Not yet.",
+            "reply": "Do not test my patience.",
+            "next": 2,
+            "reputation": { "aldric": -3 },
+            "tags": ["rude", "sarcastic"]
+          }
+        ]
+      },
+      {
+        "npc": "Good. I will see you tomorrow.",
+        "choices": []
+      },
+      {
+        "npc": "Patience is a virtue. Come back later.",
+        "choices": []
+      }
+    ]
+  },
+  "mirelle": {
+    "name": "Lady Mirelle",
+    "description": "A noblewoman whose smile hides calculation.",
+    "iconColor": "#7a1d3f",
+    "scenes": [
+      {
+        "npc": "You look lost in my halls.",
+        "choices": [
+          {
+            "text": "I seek alliance.",
+            "reply": "Alliance requires trust.",
+            "tags": ["serious"]
+          },
+          {
+            "text": "Just passing through.",
+            "reply": "Few pass without purpose.",
+            "tags": ["casual"]
+          }
+        ]
+      }
+    ]
+  }
+}
