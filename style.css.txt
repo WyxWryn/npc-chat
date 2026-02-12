@@ -1,0 +1,13 @@
+body {
+  font-family: sans-serif;
+  background: #111;
+  color: #eee;
+  padding: 20px;
+}
+
+#chat {
+  border: 1px solid #444;
+  padding: 10px;
+  min-height: 200px;
+  margin-bottom: 10px;
+}
