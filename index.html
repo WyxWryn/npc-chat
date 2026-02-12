@@ -1,17 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>NPC Chat Prototype</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>The Black Ledger</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>NPC Chat</h1>
 
-  <div id="chat"></div>
+<div class="app">
 
-  <button id="testBtn">Talk</button>
+    <!-- SIDEBAR -->
+    <div class="sidebar">
+        <div class="user-panel">
+            <div class="avatar"></div>
+            <div class="username">Wyx</div>
+        </div>
 
-  <script src="script.js"></script>
+        <div class="character-list">
+            <div class="character active">
+                <span class="status online"></span>
+                Sir Aldric
+            </div>
+            <div class="character">
+                <span class="status offline"></span>
+                Lady Mirelle
+            </div>
+            <div class="character">
+                <span class="status offline"></span>
+                The Apothecary
+            </div>
+        </div>
+    </div>
+
+    <!-- CHAT AREA -->
+    <div class="chat-area">
+        <div class="chat-header">
+            Sir Aldric
+        </div>
+
+        <div class="chat-box">
+            <div class="message npc">
+                You stand before me again. Speak.
+            </div>
+
+            <div class="message player">
+                I came about the debt you mentioned.
+            </div>
+        </div>
+
+        <div class="chat-input">
+            <input type="text" placeholder="Write your reply...">
+            <button>Send</button>
+        </div>
+    </div>
+
+</div>
+
 </body>
 </html>
