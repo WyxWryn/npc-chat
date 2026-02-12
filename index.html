@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>The Black Ledger</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<title>The Black Ledger</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -11,50 +11,46 @@
 
     <!-- SIDEBAR -->
     <div class="sidebar">
+
         <div class="user-panel">
             <div class="avatar"></div>
             <div class="username">Wyx</div>
         </div>
 
-        <div class="character-list">
-            <div class="character active">
-                <span class="status online"></span>
-                Sir Aldric
-            </div>
-            <div class="character">
-                <span class="status offline"></span>
-                Lady Mirelle
-            </div>
-            <div class="character">
-                <span class="status offline"></span>
-                The Apothecary
-            </div>
-        </div>
+        <div class="character-list" id="characterList"></div>
+
     </div>
 
     <!-- CHAT AREA -->
     <div class="chat-area">
-        <div class="chat-header">
-            Sir Aldric
+
+        <div class="chat-header" id="chatHeader">
+            <div class="header-icon" id="headerIcon"></div>
+            <div class="header-name" id="headerName"></div>
         </div>
 
-        <div class="chat-box">
-            <div class="message npc">
-                You stand before me again. Speak.
-            </div>
+        <div class="chat-box" id="chatBox"></div>
 
-            <div class="message player">
-                I came about the debt you mentioned.
-            </div>
-        </div>
+        <div class="choice-box" id="choiceBox"></div>
 
-        <div class="chat-input">
-            <input type="text" placeholder="Write your reply...">
-            <button>Send</button>
-        </div>
     </div>
 
 </div>
 
+<!-- PROFILE OVERLAY -->
+<div class="profile-overlay hidden" id="profileOverlay">
+    <div class="profile-card">
+        <div class="profile-header">
+            <div class="profile-icon" id="profileIcon"></div>
+            <div>
+                <h2 id="profileName"></h2>
+                <p id="profileDescription"></p>
+            </div>
+        </div>
+        <button onclick="closeProfile()">Close</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
